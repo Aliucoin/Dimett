@@ -45,7 +45,7 @@ class LoginViewModel(
 
     // Whether or not the desired instance supports the Mastodon api, as that is all Dimett will support for now
     val instanceIsMastodon: Boolean
-        get() = nodeInfo?.metadata?.features?.contains("mastodon_api") == true || nodeInfo?.software?.name == "mastodon"
+        get() = true
 
     /**
      * Opens a Chrome custom tab with the OAuth authorization url for the desired instance
